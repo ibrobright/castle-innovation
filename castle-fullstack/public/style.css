@@ -118,7 +118,7 @@ a { text-decoration: none; color: inherit; }
 .logo-icon {
   position: relative; width: 42px; height: 42px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--blue-elec); font-size: 1.6rem;
+  color: var(#ffffff); font-size: 1.6rem;
 }
 .logo-icon .logo-castle {
   position: absolute; font-size: .65rem; color: #fff;
@@ -129,14 +129,16 @@ a { text-decoration: none; color: inherit; }
 .logo-castle-text {
   font-family: var(--font-display); font-weight: 800;
   font-size: 1.15rem; letter-spacing: .1em;
-  color: var(--blue-deep); line-height: 1;
+  color: #ffffff; line-height: 1;
 }
-[data-theme="dark"] .logo-castle-text { color: var(--blue-light); }
+[data-theme="dark"] .logo-castle-text { color: #ffffff; }
 .logo-innovations-text {
   font-family: var(--font-display); font-weight: 600;
   font-size: .62rem; letter-spacing: .15em; text-transform: uppercase;
-  color: var(--blue-elec);
+  color: #ffffff;
 }
+
+
 .logo-innovations-text em { font-style: normal; color: var(--gray-600); }
 
 /* Nav links */

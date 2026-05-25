@@ -37,10 +37,20 @@
     <!-- Logo with Image and Text -->
     <a class="navbar-brand d-flex align-items-center" href="#home" style="gap: 8px;">
       <img src="cil.jfif" alt="Castle Innovations Ltd" class="navbar-logo" style="height: 45px; width: auto; object-fit: contain;">
-      <div class="logo-text" style="display: flex; flex-direction: column; line-height: 1.1;">
-        <span class="logo-castle-text" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: 0.1em; color: var(--blue-deep); line-height: 1;">CASTLE</span>
-        <span class="logo-innovations-text" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-elec);">INNOVATIONS <em>LTD</em></span>
-      </div>
+      <style>
+  /* Forces logo text to white in dark mode (overrides inline styles) */
+  [data-theme="dark"] .logo-castle-text,
+  [data-theme="dark"] .logo-innovations-text,
+  body.dark-mode .logo-castle-text,
+  body.dark-mode .logo-innovations-text {
+    color: #ffffff !important;
+  }
+</style>
+
+<div class="logo-text" style="display: flex; flex-direction: column; line-height: 1.1;">
+  <span class="logo-castle-text" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: 0.1em; color: var(--blue-deep); line-height: 1;">CASTLE</span>
+  <span class="logo-innovations-text" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-elec);">INNOVATIONS <em>LTD</em></span>
+</div>
     </a>
     
     <!-- Right Side: Theme Toggle, Button, Toggler -->
